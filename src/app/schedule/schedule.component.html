@@ -1,0 +1,16 @@
+<h1>test</h1>
+
+<div>
+  <input type="text" [(ngModel)]="userFilter.name" placeholder="Type to filter by name">
+
+  <ul>
+    <li *ngFor="let user of users | filterBy: userFilter">
+      {{ user.name }}
+    </li>
+
+    <!-- in case you want to show empty message -->
+    <li *ngIf="(users | filterBy: userFilter).length === 0">
+      No matching elements
+    </li>
+  </ul>
+</div>

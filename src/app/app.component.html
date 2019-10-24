@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: darkred; height: 5%; color: white;">
+  <img src="assets/img/lng.jpg" alt="thumbnail" class="img-thumbnail" size="50" style="width: 140px; height: 40px;">
+  <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div [ngbCollapse]="isNavbarCollapsed" class="nav navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/schedule" href="#">
+          Schedule
+          <span class="sr-only"></span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/" href="#">Tasks</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/patient" href="#">Patient</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user">All Departments</i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link waves-effect waves-light">
+          <i class="fab fa-google-plus-g">Grumble</i>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link waves-effect waves-light">
+          <i class="fab fa-google-plus-g">Beverly</i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br />
+<br />
+<div class="container-fluid ">
+  <div class="">
+    <div id="left-section">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg " style="margin-top:-35px; border: 2px;">
+          <div class="btn-group-vertical ">
+            <br />
+            <br />
+            <h2 style="margin-top:-300px; margin-left: 10px;">Patient search</h2>
+            <!-- Links -->
+            <div class="md-form">
+              <input mdbInput type="text" name="text" [(ngModel)]="text" id="form1" class="form-control" style=" margin-left: -10px;  width: 239px;">
+            </div>
+            <br />
+            <br />
+            <div class="md-form my-0">
+              <button type="button" class="btn btn-primary " routerLink="/system" style="margin-left:-10px; padding: 5px; margin-top: -30px; padding-top:13px;  width: 239px;">Recent patients</button>
+            </div>
+            <br />
+          </div>
+          <button id="btnGroupVerticalDrop1" type="button" class="btn btn-indigo ml-3 mr-3" data-toggle="" aria-haspopup="true" aria-expanded="false" style="padding-right: 25px; margin:180px;  width: 230px;"></button>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

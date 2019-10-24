@@ -1,0 +1,161 @@
+<div class="btn-group-vertical" style="margin-top:-536px; margin-left: 270px;">
+  <div class="btn-toolbar flex-wrap mb-3" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group mr-2" role="group" aria-label="First group">
+      <button type="button" class="btn btn-info btn-lg" style="margin-top: -100px; margin-left: -10px; padding-left: 40px; width: 987px;">
+        <span class="" style="font-size: 35px; color: skyblue"> <ngx-avatar value="75%" src="assets/img/avatar.jpg"></ngx-avatar></span>
+        <p class="h6 card-title font-weight-bold" style="padding-right: 720px;  margin-top: -40px;">TestA TestA</p>
+        <br />
+        <br />
+        <p class="h6 card-title font-weight-bold " style="padding-right: 754px; margin-top: -37px;">Appt:</p>
+        <br />
+        <p class="h6 card-title font-weight-bold " style="padding-right: 724px; margin-top: -27px;">Diagnosis:</p>
+        <p class="h6 card-title font-weight-bold" style="padding-left: 64px; margin-top: -55px;">DOB: Jun, 1960 | 58 years old</p>
+        <br />
+        <br />
+        <br />
+        <p class="h6 card-title font-weight-bold " style="padding-left: 64px; margin-top: -37px;">Attending: Grumble, Beverly</p>
+      </button>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="width:100%;margin-left:-5px;">
+      <a class="navbar-brand" routerLink="/summary" href="#">
+        Chart Summary
+      </a>
+      <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Forms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Assessments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chart PREP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Capture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Documents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Checklist</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<div #content class="content">
+
+  <table #dataTable class="display table" style="width:100%; font-size: 15px;">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Diagonosis</th>
+        <th>Adress</th>
+        <th>Age</th>
+        <th>Start date</th>
+        <th>End date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tiger Nixon</td>
+        <td>SA</td>
+        <td>A1</td>
+        <td>61</td>
+        <td>2019/04/25</td>
+        <td>2019/04/30</td>
+      </tr>
+      <tr>
+        <td>king</td>
+        <td>AB</td>
+        <td>B2</td>
+        <td>63</td>
+        <td>2019/04/25</td>
+        <td>2019/04/30</td>
+      </tr>
+      <tr>
+        <td>Ashooq</td>
+        <td>JTA</td>
+        <td>SF</td>
+        <td>66</td>
+        <td>2019/05/25</td>
+        <td>2019/05/30</td>
+      </tr>
+      <tr>
+        <td>Kelly</td>
+        <td>SJD</td>
+        <td>E3</td>
+        <td>22</td>
+        <td>2019/05/25</td>
+        <td>2019/05/30</td>
+      </tr>
+      <tr>
+        <td>Airi</td>
+        <td>AVC</td>
+        <td>V4</td>
+        <td>33</td>
+        <td>2019/04/25</td>
+        <td>2019/04/30</td>
+      </tr>
+      <tr>
+        <td>Williamson</td>
+        <td>HE3</td>
+        <td>N2</td>
+        <td>61</td>
+        <td>2019/06/25</td>
+        <td>2019/06/30</td>
+      </tr>
+      <tr>
+        <td>Herrod</td>
+        <td>KH</td>
+        <td>S2</td>
+        <td>59</td>
+        <td>2019/06/25</td>
+        <td>2019/06/30</td>
+      </tr>
+      <tr>
+        <td>Rhona</td>
+        <td>IS</td>
+        <td>B8</td>
+        <td>55</td>
+        <td>2019/07/25</td>
+        <td>2019/07/30</td>
+      </tr>
+      <tr>
+        <td>Shahwali</td>
+        <td>surgery</td>
+        <td>KL</td>
+        <td>39</td>
+        <td>2019/07/25</td>
+        <td>2019/07/30</td>
+      </tr>
+      <tr>
+        <td>Sonya</td>
+        <td>bone broken</td>
+        <td>Gombak</td>
+        <td>23</td>
+        <td>2019/07/25</td>
+        <td>2019/07/30</td>
+      </tr>
+      <tr>
+        <td>Sanam</td>
+        <td>hand broken</td>
+        <td>Shahalaam</td>
+        <td>30</td>
+        <td>2019/08/25</td>
+        <td>2019/08/30</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  <div class="btn-lg">
+    <button (click)="makePdf()">make pdf</button>
+  </div>
